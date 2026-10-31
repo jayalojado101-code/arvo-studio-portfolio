@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ARVO Studio | Every Vision Has a Story</title>
+    <meta name="description" content="ARVO Studio — Photography and Videography by Jay Alojado. Every Vision Has a Story.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- INTRO -->
+    <div class="intro-screen" id="introScreen">
+        <div class="intro-logo">
+            <img src="images/arvo-logo.png" alt="ARVO Studio Logo">
+            <p>EVERY VISION HAS A STORY</p>
+        </div>
+    </div>
+
+    <div class="grain-overlay"></div>
+
+    <!-- HEADER -->
+    <header class="site-header" id="siteHeader">
+        <a href="#home" class="brand">
+            <img src="images/arvo-logo.png" alt="ARVO Studio">
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="navigation" id="navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero-section" id="home">
+            <div class="hero-wave" aria-hidden="true">
+                <div class="wave-layer wave-one"></div>
+                <div class="wave-layer wave-two"></div>
+            </div>
+
+            <div class="hero-content">
+                <p class="hero-overline">FILM · PHOTOGRAPHY · VIDEOGRAPHY</p>
+
+                <h1>
+                    Every Vision<br>
+                    <span>Has a Story.</span>
+                </h1>
+
+                <p class="hero-description">
+                    We capture moments, create emotions, and turn
+                    every vision into a timeless story.
+                </p>
+
+                <a href="#portfolio" class="outline-button">
+                    EXPLORE OUR WORK <span>↗</span>
+                </a>
+            </div>
+
+            <div class="hero-bottom">
+                <span>INDEPENDENT CREATIVE STUDIO</span>
+                <span>SCROLL TO EXPLORE ↓</span>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about-section section-padding" id="about">
+            <div class="section-heading">
+                <span class="section-number">ABOUT</span>
+                <h2>Beyond the <em>Frame.</em></h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/about-photo.jpg" alt="ARVO Studio creative work">
+                </div>
+
+                <div class="about-text">
+                    <span class="small-label">THE STORY BEHIND ARVO</span>
+
+                    <h3>
+                        More than just<br>
+                        <em>capturing moments.</em>
+                    </h3>
+
+                    <p>
+                        ARVO Studio is a creative photography and
+                        videography brand dedicated to capturing
+                        meaningful moments and transforming them
+                        into stories worth remembering.
+                    </p>
+
+                    <p>
+                        From genuine emotions to carefully crafted
+                        visuals, every frame is created with purpose,
+                        creativity, and passion.
+                    </p>
+
+                    <div class="about-signature">
+                        <span>ARVO Studio</span>
+                        <small>EVERY VISION HAS A STORY.</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO CATEGORIES -->
+        <section class="portfolio-section section-padding" id="portfolio">
+            <div class="section-heading">
+                <span class="section-number">SELECTED WORKS</span>
+                <h2>Stories in <em>Frames.</em></h2>
+                <p>A collection of moments, emotions, and perspectives.</p>
+            </div>
+
+            <div class="portfolio-grid">
+
+                <button class="portfolio-item" data-category="wedding">
+                    <img src="images/wedding/wedding-1.jpg" alt="Wedding Stories">
+                    <span class="portfolio-caption">
+                        <small>01 / PHOTOGRAPHY</small>
+                        <strong>Wedding Stories</strong>
+                        <span class="view-collection">VIEW COLLECTION ↗</span>
+                    </span>
+                </button>
+
+                <button class="portfolio-item" data-category="portraits">
+                    <img src="images/portraits/portrait-1.jpg" alt="Portraits">
+                    <span class="portfolio-caption">
+                        <small>02 / PHOTOGRAPHY</small>
+                        <strong>Portraits</strong>
+                        <span class="view-collection">VIEW COLLECTION ↗</span>
+                    </span>
+                </button>
+
+                <button class="portfolio-item" data-category="prenup">
+                    <img src="images/prenup/prenup-1.jpg" alt="Prenup Stories">
+                    <span class="portfolio-caption">
+                        <small>03 / PHOTOGRAPHY</small>
+                        <strong>Prenup Stories</strong>
+                        <span class="view-collection">VIEW COLLECTION ↗</span>
+                    </span>
+                </button>
+
+                <button class="portfolio-item" data-category="events">
+                    <img src="images/events/event-1.jpg" alt="Events and Celebrations">
+                    <span class="portfolio-caption">
+                        <small>04 / PHOTOGRAPHY</small>
+                        <strong>Events & Celebrations</strong>
+                        <span class="view-collection">VIEW COLLECTION ↗</span>
+                    </span>
+                </button>
+
+                <button class="portfolio-item" data-category="brands">
+                    <img src="images/brands/brand-1.jpg" alt="Brands and Products">
+                    <span class="portfolio-caption">
+                        <small>05 / COMMERCIAL</small>
+                        <strong>Brands & Products</strong>
+                        <span class="view-collection">VIEW COLLECTION ↗</span>
+                    </span>
+                </button>
+
+                <button class="portfolio-item" data-category="films">
+                    <img src="images/films/film-1.jpg" alt="Visual Films">
+                    <span class="portfolio-caption">
+                        <small>06 / VIDEOGRAPHY</small>
+                        <strong>Visual Films</strong>
+                        <span class="view-collection">VIEW COLLECTION ↗</span>
+                    </span>
+                </button>
+
+            </div>
+        </section>
+
+        <!-- CATEGORY GALLERY -->
+        <section class="category-gallery" id="categoryGallery" aria-hidden="true">
+            <div class="category-gallery-header">
+                <div>
+                    <span class="small-label">ARVO STUDIO COLLECTION</span>
+                    <h2 id="galleryTitle">Wedding Stories</h2>
+                    <p>Selected moments captured by ARVO Studio.</p>
+                </div>
+
+                <button class="gallery-close" id="galleryClose"
+                        aria-label="Close gallery">×</button>
+            </div>
+
+            <div class="gallery-photo-grid" id="galleryPhotoGrid"></div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="services-section section-padding" id="services">
+            <div class="section-heading">
+                <span class="section-number">WHAT WE DO</span>
+                <h2>Our Creative <em>Services.</em></h2>
+            </div>
+
+            <div class="services-list">
+                <article class="service-item">
+                    <span>01</span>
+                    <h3>Wedding Photography & Films</h3>
+                    <p>Preserving the emotions and memories of your special day.</p>
+                    <span class="service-arrow">↗</span>
+                </article>
+
+                <article class="service-item">
+                    <span>02</span>
+                    <h3>Portrait Photography</h3>
+                    <p>Personal portraits that express character and individuality.</p>
+                    <span class="service-arrow">↗</span>
+                </article>
+
+                <article class="service-item">
+                    <span>03</span>
+                    <h3>Prenup Photography</h3>
+                    <p>Creative storytelling for couples and their journey together.</p>
+                    <span class="service-arrow">↗</span>
+                </article>
+
+                <article class="service-item">
+                    <span>04</span>
+                    <h3>Events & Celebrations</h3>
+                    <p>Capturing meaningful moments worth looking back on.</p>
+                    <span class="service-arrow">↗</span>
+                </article>
+
+                <article class="service-item">
+                    <span>05</span>
+                    <h3>Brands & Products</h3>
+                    <p>Visual content that presents your brand with purpose.</p>
+                    <span class="service-arrow">↗</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- PHILOSOPHY -->
+        <section class="philosophy-section section-padding">
+            <span class="section-number">THE ARVO PHILOSOPHY</span>
+            <h2>Four Letters.<br><em>One Creative Vision.</em></h2>
+
+            <div class="philosophy-grid">
+                <article>
+                    <span>A</span>
+                    <h3>Artistry</h3>
+                    <p>The creativity behind every frame.</p>
+                </article>
+
+                <article>
+                    <span>R</span>
+                    <h3>Rhythm</h3>
+                    <p>The movement and emotion of every story.</p>
+                </article>
+
+                <article>
+                    <span>V</span>
+                    <h3>Vision</h3>
+                    <p>The perspective behind every creation.</p>
+                </article>
+
+                <article>
+                    <span>O</span>
+                    <h3>Originality</h3>
+                    <p>The uniqueness of every captured moment.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CREATOR -->
+        <section class="creator-section section-padding">
+            <div class="creator-image">
+                <img src="images/photographer.jpg" alt="Jay Alojado">
+            </div>
+
+            <div class="creator-text">
+                <span class="small-label">THE PERSON BEHIND THE LENS</span>
+                <h2>Jay <em>Alojado.</em></h2>
+                <p class="creator-role">PHOTOGRAPHER & VIDEOGRAPHER</p>
+
+                <p>
+                    Every photograph begins with a perspective.
+                    Every film begins with a story. My goal is to
+                    create visuals that preserve moments and make
+                    them unforgettable.
+                </p>
+
+                <span class="creator-brand">PRESENTED BY ARVO STUDIO</span>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact-section section-padding" id="contact">
+            <span class="section-number">LET'S CREATE SOMETHING</span>
+            <h2>Have a story<br><em>to tell?</em></h2>
+
+            <p>
+                Let's turn your ideas and special moments into
+                something worth remembering.
+            </p>
+
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jayalojado101@gmail.com"
+               target="_blank" rel="noopener noreferrer"
+               class="outline-button">
+                START A PROJECT <span>↗</span>
+            </a>
+
+            <div class="contact-email">
+                <small>EMAIL</small>
+                <a href="mailto:jayalojado101@gmail.com">
+                    jayalojado101@gmail.com
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <img src="images/arvo-logo.png" alt="ARVO Studio Logo">
+            <p>Every Vision Has a Story.</p>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© <span class="footer-year">2021</span> ARVO STUDIO. ALL RIGHTS RESERVED.</span>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com/people/Jay-Visual/61594762825265/"
+                   target="_blank" rel="noopener noreferrer">FACEBOOK ↗</a>
+
+                <a href="https://www.tiktok.com/@arvoproductionph?is_from_webapp=1&sender_device=pc"
+                   target="_blank" rel="noopener noreferrer">TIKTOK ↗</a>
+            </div>
+
+            <span>Designed by: Jay Alojado.</span>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" id="lightboxClose"
+                aria-label="Close image">×</button>
+
+        <button class="lightbox-prev" id="lightboxPrev"
+                aria-label="Previous image">‹</button>
+
+        <div class="lightbox-content">
+            <img src="" alt="Selected ARVO Studio photograph" id="lightboxImage">
+            <p id="lightboxTitle"></p>
+        </div>
+
+        <button class="lightbox-next" id="lightboxNext"
+                aria-label="Next image">›</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
