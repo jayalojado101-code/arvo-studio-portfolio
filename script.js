@@ -1,7 +1,7 @@
 
 /* =========================================
    ARVO STUDIO — AUTOMATIC GALLERY SYSTEM
-   Node.js + Express API
+   Cloudflare Pages — JSON Gallery
    Smooth Gallery Scroll + Photo Reveal
    ========================================= */
 
@@ -46,16 +46,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     async function loadGalleryData() {
         try {
-            const response = await fetch("/api/gallery");
+            const response = await fetch("/gallery.json");
 
             if (!response.ok) {
-                throw new Error("Unable to connect to gallery API.");
+                throw new Error("Unable to load gallery.json.");
             }
 
             const data = await response.json();
 
             if (!data.success || !data.gallery) {
-                throw new Error("Invalid gallery response.");
+                throw new Error("Invalid gallery data.");
             }
 
             galleryData = data.gallery;
@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 
-        /* Refresh gallery data from the server. */
+        /* Load gallery data from gallery.json. */
 
         const loaded = await loadGalleryData();
 
@@ -219,7 +219,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const errorMessage = document.createElement("p");
             errorMessage.textContent =
-                "Unable to load photographs. Please check your gallery server.";
+                "Unable to load photographs. Please check your gallery data.";
             errorMessage.className = "gallery-loading";
 
             galleryPhotoGrid.appendChild(errorMessage);
@@ -233,22 +233,22 @@ document.addEventListener("DOMContentLoaded", () => {
         galleryPhotoGrid.innerHTML = "";
 
         if (photos.length === 0) {
-        const emptyState = document.createElement("div");
+            const emptyState = document.createElement("div");
 
-        emptyState.className = "gallery-empty-state";
+            emptyState.className = "gallery-empty-state";
 
-        emptyState.innerHTML = `
-            <span class="empty-state-label">ARVO STUDIO</span>
-            <h3>New Stories Coming Soon</h3>
-            <p>
-                This collection is currently being prepared.
-                Stay tuned for more visual stories.
-            </p>
-        `;
+            emptyState.innerHTML = `
+                <span class="empty-state-label">ARVO STUDIO</span>
+                <h3>New Stories Coming Soon</h3>
+                <p>
+                    This collection is currently being prepared.
+                    Stay tuned for more visual stories.
+                </p>
+            `;
 
-        galleryPhotoGrid.appendChild(emptyState);
-        return;
-    }
+            galleryPhotoGrid.appendChild(emptyState);
+            return;
+        }
 
 
         photos.forEach((photo, index) => {

@@ -1,11 +1,13 @@
+
 {
   "name": "arvo-production-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "ARVO Studio Photography and Videography Portfolio",
   "main": "script.js",
   "scripts": {
-  "start": "node server.js"
-},
+    "start": "node server.js",
+    "build": "node generate-gallery.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
