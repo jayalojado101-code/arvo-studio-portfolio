@@ -1,0 +1,23 @@
+{
+    "success": true,
+    "gallery": {
+        "portraits": [
+            {
+                "filename": "2315dafb-5061-40ea-b04e-ab5af5d538f2.jpg",
+                "url": "/images/portraits/2315dafb-5061-40ea-b04e-ab5af5d538f2.jpg"
+            }
+        ],
+        "wedding": [
+            {
+                "filename": "DSC_0139.jpg",
+                "url": "/images/wedding/DSC_0139.jpg"
+            }
+        ],
+        "events": [
+            {
+                "filename": "event-4.jpg",
+                "url": "/images/events/event-4.jpg"
+            }
+        ]
+    }
+}
